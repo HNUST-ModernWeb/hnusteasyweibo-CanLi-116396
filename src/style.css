@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #f5f7fa;
+  --card: #fff;
+  --text: #333;
+}
+.dark {
+  --bg: #18181b;
+  --card: #27272a;
+  --text: #e5e7eb;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  padding-bottom: 40px;
+}
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: var(--card);
+  color: var(--text);
+}
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+}
+.btn-primary { background: #4263eb; color: white; }
+.btn-danger  { background: #f03e3e; color: white; }
+.btn-orange  { background: #f59e0b; color: white; }
+.btn-dark    { background: #333; color: white; }
+.error { color: red; font-size:12px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
